@@ -1,0 +1,15 @@
+namespace CHECK
+{
+  class No { bool b[2]; };
+  template<typename T, typename Arg> No operator== (const T&, const Arg&);
+ 
+  bool Check (...);
+  No& Check (const No&);
+ 
+  template <typename T, typename Arg = T>
+  struct EqualExists
+  {
+    enum { value = (sizeof(Check(*(T*)(0) == *(Arg*)(0))) != sizeof(No)) };
+  };  
+}
+
