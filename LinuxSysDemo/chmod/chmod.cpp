@@ -1,3 +1,5 @@
+//An implemention of chmod in bash shell commands
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <sys/stat.h>
