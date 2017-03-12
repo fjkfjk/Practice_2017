@@ -6,7 +6,7 @@
 
 int main()
 {
-	ISort* sorter = new Sorter(SORT_METHOD::MERGE_SORT);
+	ISort* sorter = new Sorter(SORT_METHOD::HEAP_SORT);
 	int arr[7]{ 2,5,8,1,-5,9,6 };
 	sorter->sort(arr,0,6);
 	for (int& x : arr)

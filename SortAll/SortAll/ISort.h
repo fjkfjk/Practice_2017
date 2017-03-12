@@ -6,7 +6,7 @@ enum class SORT_METHOD
 	HEAP_SORT,
 	MERGE_SORT
 };
-class ISort
+class ISort abstract
 {
 public:
 	virtual void sort(int* arr,int startIdx,int endIdx) = 0;
