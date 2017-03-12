@@ -1,0 +1,27 @@
+﻿add some code
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+# Your branch is up-to-date with 'origin/master'.
+#
+# Changes to be committed:
+#	new file:   C11_MultipleThread/atomic_flag.cpp
+#	new file:   C11_MultipleThread/counter.cpp
+#	new file:   LinuxSysDemo/MemLeak/classmemcheck.hpp
+#	new file:   LinuxSysDemo/MemLeak/memcheck.hpp
+#	new file:   LinuxSysDemo/process/daemon.c
+#	new file:   LinuxSysDemo/process/fork.c
+#	new file:   SortAll/.vs/SortAll/v14/.suo
+#	new file:   SortAll/SortAll.VC.db
+#	new file:   SortAll/SortAll.sln
+#	new file:   SortAll/ipch/SORTALL-9c8151d/SORTALL-3fd4d0ed.ipch
+#
+# Changes not staged for commit:
+#	modified:   SortAll/SortAll.VC.db
+#
+# Untracked files:
+#	.vscode/
+#	SortAll/SortAll.VC.VC.opendb
+#	SortAll/SortAll/
+#
+
