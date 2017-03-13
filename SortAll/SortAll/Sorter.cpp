@@ -158,28 +158,33 @@ void PriorityQueue::push(int n)
 
 int PriorityQueue::pop()
 {
-	int x = data[count];
 	int min = data[1];
-	--count;
+
+	int x = data[1] = data[count--];
 	int i = 1;
-	for (; 2 * i <= count; i *= 2)
+	for (; i * 2 < count; i *= 2)
 	{
 		int child = i * 2;
-		if (child < count && data[child] > data[child + 1])  //儿子节点有两个，所以要先比较左右儿子,再用较小的儿子和父亲节点比，小的话就上去，大的话就跳出，这个位置就是最后那个节点的位置
+		if (data[child] > data[child + 1])
 		{
 			child++;
 		}
-		if (data[child] < x)
+		if (data[i] > data[child])
 		{
-			data[i] = data[child];
+			swap(data[i], data[child]);
 		}
 		else
 		{
 			break;
 		}
-
 	}
-	data[i] = x;
+	if (i * 2 == count)
+	{
+		if (data[i * 2] < data[i])
+		{
+			swap(data[i], data[2 * 1]);
+		}
+	}
 	return min;
 }
 
